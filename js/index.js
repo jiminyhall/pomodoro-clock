@@ -107,7 +107,7 @@ function timerReset() {
       document.getElementById("time").innerHTML = minutes + ":" + seconds;
 
   // set the timer to go 1000 = 1 second
-  timer = setInterval(myTimer, 100);
+  timer = setInterval(myTimer, 1000);
 
 };
 
@@ -148,7 +148,7 @@ function myTimer() {
 
   if (percent === 1) {
     beep();
-    // swtich to other  
+    // swtich to other
     clearTimeout(timer);
     if (isBreak) {
       isBreak = false;
