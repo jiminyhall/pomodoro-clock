@@ -80,7 +80,7 @@ function timerGo() {
       document.getElementById("time").innerHTML = minutes + ":" + seconds;
   }
   // set the timer to go 1000 = 1 second
-  timer = setInterval(myTimer, 100);
+  timer = setInterval(myTimer, 1000);
 };
 
 function timerReset() {
